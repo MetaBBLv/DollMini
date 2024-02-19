@@ -1,0 +1,22 @@
+/* pages/home.wxss */
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: cadetblue;
+}
+.homeScrollview {
+  flex: 1;
+  overflow-y: hidden;
+  
+}
+
+.bannerView {
+  width: 100vw;
+  height: 200rpx;
+  color: blueviolet;
+}
+
+.bannerImage {
+  flex: 1;
+}

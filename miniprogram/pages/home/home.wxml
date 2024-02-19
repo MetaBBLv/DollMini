@@ -1,0 +1,13 @@
+<!--pages/home.wxml-->
+<navigation-bar title="首页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<text>ppt</text>
+<view class="bannerImage">
+  <image class="bannerImage" src:="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+</view>
+<scroll-view class="homeScrollview" scroll-y type="list">
+  <view class="container">
+    <view class="bannerView">
+      <image class="bannerImage" src:="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,63 @@
+{
+  "entryPagePath": "pages/home/home",
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/shop/shop",
+    "pages/rank/rank",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#800080",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle":"black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "image/icon_home.png",
+        "selectedIconPath": "image/icon_home_sel.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "image/icon_shop.png",
+        "selectedIconPath": "image/icon_shop_sel.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜",
+        "iconPath": "image/icon_rank.png",
+        "selectedIconPath": "image/icon_rank_sel.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人",
+        "iconPath": "image/icon_mine.png",
+        "selectedIconPath": "image/icon_mine_sel.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
