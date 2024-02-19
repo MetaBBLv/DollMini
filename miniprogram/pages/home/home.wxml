@@ -1,13 +1,17 @@
 <!--pages/home.wxml-->
 <navigation-bar title="首页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<text>ppt</text>
-<view class="bannerImage">
-  <image class="bannerImage" src:="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
-</view>
 <scroll-view class="homeScrollview" scroll-y type="list">
-  <view class="container">
-    <view class="bannerView">
-      <image class="bannerImage" src:="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+  <view class="bannerView">
+      <image class="bannerImage" src="/image/card_icon_1.png" mode="aspectFill"></image>
+  </view>
+  <view class="locationView">
+    <image class="locationImageView" src="/image/icon_location.png" mode="aspectFit"/>
+    <text class="locationText" style="font-size: 13px;">上海杨浦区五角场合生汇B1-999-999</text>
+  </view>
+  <view class="userInfoBackgroundView">
+    <view class="userInfoView">
+      <image class="userInfoHeaderImage" src="/image/icon_headerImage.jpg" mode="aspectFit"/>
+      <text class="userInfoHeaderNickName" style="font-size: 13px;">BBLv</text>
     </view>
   </view>
 </scroll-view>
