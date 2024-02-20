@@ -1,1 +1,40 @@
 /* pages/shop/shop.wxss */
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: rgb(164, 102, 223);
+}
+
+.shopScrollview {
+  flex: 1;
+  overflow-y: hidden;
+  background-color: rgb(164, 102, 223);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: darkgrey;
+}
+
+.search-input {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.search-btn {
+  height: 40px;
+  padding: 0 15px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+}

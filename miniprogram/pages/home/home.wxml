@@ -2,7 +2,20 @@
 <navigation-bar title="首页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view class="homeScrollview" scroll-y type="list">
   <view class="bannerView">
-      <image class="bannerImage" src="/image/card_icon_1.png" mode="aspectFill"></image>
+    <swiper class="bannerImage" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}"   duration="{{500}}" circular="{{true}}">
+      <swiper-item>
+        <image class="bannerImage" mode="aspectFill" src="/image/icon_banner_mountain_1.png" />
+      </swiper-item>
+      <swiper-item>
+        <image class="bannerImage" mode="aspectFill" src="/image/icon_banner_mountain_2.png" />
+      </swiper-item>
+      <swiper-item>
+        <image class="bannerImage" mode="aspectFill" src="/image/icon_banner_mountain_3.png" />
+      </swiper-item>
+      <swiper-item>
+        <image class="bannerImage" mode="aspectFill" src="/image/icon_banner_mountain_4.png" />
+      </swiper-item>
+    </swiper>
   </view>
   <view class="locationView">
     <image class="locationImageView" src="/image/icon_location.png" mode="aspectFit"/>
@@ -11,7 +24,33 @@
   <view class="userInfoBackgroundView">
     <view class="userInfoView">
       <image class="userInfoHeaderImage" src="/image/icon_headerImage.jpg" mode="aspectFit"/>
-      <text class="userInfoHeaderNickName" style="font-size: 13px;">BBLv</text>
+      <view class="userInfoHeaderNameType">
+        <text class="userInfoHeaderNickName" style="font-size:15px; font-weight: bold;" >一曲柳殇化隐半面冰霜一曲柳殇化隐半</text>
+        <text class="userInfoHeaderID" style="font-size: 12px;">ID: 100009666</text>
+      </view>
+      <view class="userInfoPointsView">
+        <text class="userInfoPointsPrompt" style="font-size: 10px;">BB积分</text>
+        <text class="userInfoPoints" style="font-size: 30px; font-weight: bold;">9999</text>
+      </view>
+    </view>
+  </view>
+  <view class="businessBackgroundView">
+    <view class="businessView">
+      <view class="buisnessButtonView">
+        <button class="businessButton">
+          <image src="/image/icon_ORCode.png" class="businessButtonIcon" />
+          <text class="businessButtonText">我的二维码</text>
+        </button>
+        <button class="businessButton">
+          <image src="/image/icon_scanCode.png" class="businessButtonIcon" />
+          <text class="businessButtonText">扫描二维码</text>
+        </button>
+        <button class="businessButton">
+          <image src="/image/icon_gamePointChange.png" class="businessButtonIcon" />
+          <text class="businessButtonText">游戏币兑换</text>
+        </button>
+      </view>
+      <image class="businessImage" src="/image/icon_header_2.png" mode="aspectFit"/>
     </view>
   </view>
 </scroll-view>

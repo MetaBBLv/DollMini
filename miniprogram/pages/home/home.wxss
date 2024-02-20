@@ -4,19 +4,19 @@ page {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  background-color: blueviolet;
+  background-color: rgb(164, 102, 223);
 }
 
 .homeScrollview {
   flex: 1;
   overflow-y: hidden;
-  background-color: blueviolet;
+  background-color: rgb(164, 102, 223);
 }
  
 .bannerView {
   width: 100vw;
   height: 350px;
-  background-color: blueviolet;
+  background-color: rgb(164, 102, 223);
 }
 
 .bannerImage {
@@ -67,9 +67,107 @@ page {
   border-radius: 5px; /* 设置圆角为5像素 */
 }
 
-.userInfoHeaderNickName {
+.userInfoHeaderNameType {
+  flex-direction: column;
   left: 25px;
-  width: auto;
+  width: 150px;
+  height: 65px;
+  /* background-color: darkgray; */
+}
+
+.userInfoHeaderNickName {
+  top: 10px;
+  left: 0px;
+  width: 150px;
   height: 20px;
   color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+.userInfoHeaderID {
+  top: 20px;
+  left: 0px;
+  width: 150px;
+  height: 15px;
+  color: rgb(202, 50, 50);
+}
+
+.userInfoPointsView {
+  flex-direction: column;
+  left: 35px;
+  width: 95px;
+  height: 65px;
+  border-left: .5px solid rgba(0, 0, 0, 0.1);
+}
+
+.userInfoPointsPrompt {
+  top: 10px;
+  text-align: center;
+  height: auto;
+  color: darkgray;
+}
+
+.userInfoPoints {
+  text-align: center;
+  margin-top: 10px;
+  height: auto;
+  width: auto;
+  color: crimson;
+}
+
+.businessBackgroundView {
+  padding-top: 16px;
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  width: 100%;
+  height: 200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 32px;
+}
+
+.businessView {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+  height: 200px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px; /* 设置圆角为10像素 */
+}
+
+.buisnessButtonView {
+  background-color: transparent;
+}
+
+.businessButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* 设置背景色为透明 */
+  padding: 20px 20px; /* 按钮内边距 */
+  color: #1a1818; /* 文本颜色 */
+}
+
+.businessButtonIcon {
+  width: 20px; /* 图标宽度 */
+  height: 20px; /* 图标高度 */
+  margin-right: 5px; /* 图标右侧间距 */
+}
+
+.businessButtonText {
+  font-size: 13px; /* 文本字体大小 */
+}
+
+.businessImage {
+  top: 0px;
+  margin-left: 40px;
+  right: 20px;
+  width: 180px;
+  height: 180px;
+  /* border-radius: 10px; 设置圆角为10像素 */
+}
+
+
+

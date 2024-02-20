@@ -1,2 +1,8 @@
 <!--pages/shop/shop.wxml-->
-<text>pages/shop/shop.wxml</text>
+<navigation-bar title="商城" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="shopScrollview" scroll-y type="list">
+  <view class="search-box">
+    <input placeholder="请输入关键词" class="search-input" bindinput="onInput" />
+    <button class="search-btn" bindtap="onSearch">搜索</button>
+  </view>
+</scroll-view>
