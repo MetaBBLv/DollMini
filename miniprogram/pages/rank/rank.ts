@@ -1,12 +1,28 @@
 // pages/rank/rank.ts
+import { generateGridList } from '../../utils/util';
+
+interface PageData {
+  crossAxisCount: number;
+  crossAxisGap: number;
+  mainAxisGap: number;
+  gridList: { id: number; sub: number }[];
+}
+
+const initData: PageData = {
+  crossAxisCount: 2,
+  crossAxisGap: 4,
+  mainAxisGap: 4,
+  gridList: generateGridList(100, 4),
+};
+
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-
-  },
+  data: initData,
 
   /**
    * 生命周期函数--监听页面加载

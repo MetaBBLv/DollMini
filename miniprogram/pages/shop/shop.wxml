@@ -1,8 +1,19 @@
 <!--pages/shop/shop.wxml-->
 <navigation-bar title="商城" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="shopScrollview" scroll-y type="list">
-  <view class="search-box">
+<scroll-view class="shopScrollview" scroll-y type="custom">
+  <!-- <view class="search-box">
     <input placeholder="请输入关键词" class="search-input" bindinput="onInput" />
     <button class="search-btn" bindtap="onSearch">搜索</button>
+  </view> -->
+  <view class="card-list">
+  <view wx:for="{{cardList}}" wx:key="index" class="card">
+    <image src="{{item.image}}" class="card-image" />
+    <view class="card-content">
+      <text class="card-title">{{item.title}}</text>
+      <text class="card-description">{{item.description}}</text>
+    </view>
   </view>
+</view>
+
+
 </scroll-view>
