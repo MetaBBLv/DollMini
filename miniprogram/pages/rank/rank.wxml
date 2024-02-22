@@ -1,7 +1,21 @@
-<scroll-view scroll-y style="width: 100%; height: 100%;" type="custom">
-  <grid-view type="masonry" cross-axis-count="{{crossAxisCount}}" cross-axis-gap="{{crossAxisGap}}" main-axis-gap="{{mainAxisGap}}">
-    <grid-tile-img wx:for="{{gridList}}" wx:key="id" index="{{item.id}}" width="{{200}}" height="{{100 * item.sub}}"></grid-tile-img>
-
-    
-  </grid-view>
+<navigation-bar title="排行榜" back="{{false}}" color="white" background="#fd304d"></navigation-bar>
+<scroll-view class="rankScrollview" scroll-y type="custom">
+<view class="rank-list">
+  <view wx:for="{{rankings}}" wx:key="id" class="rank-item">
+    <!-- 排名 -->
+    <view class="rank">{{item.rank}}</view>
+    <!-- 头像 -->
+    <image class="avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+    <!-- 用户名与描述信息 -->
+    <view class="user-info">
+      <view class="username">{{item.username}}</view>
+      <view class="shopAddress">{{item.description}}</view>
+    </view>
+    <!-- 积分与积分图标 -->
+    <view class="score">
+      <image class="score-icon" src="{{item.scoreIcon}}" mode="aspectFit"></image>
+      <view class="score-text">{{item.score}}</view>
+    </view>
+  </view>
+</view>
 </scroll-view>

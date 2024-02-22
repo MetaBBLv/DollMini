@@ -1,28 +1,21 @@
 // pages/rank/rank.ts
-import { generateGridList } from '../../utils/util';
-
-interface PageData {
-  crossAxisCount: number;
-  crossAxisGap: number;
-  mainAxisGap: number;
-  gridList: { id: number; sub: number }[];
+interface Ranking {
+  id: number;
+  rank: number;
+  avatar: string;
+  username: string;
+  description: string;
+  scoreIcon: string;
+  score: number;
 }
 
-const initData: PageData = {
-  crossAxisCount: 2,
-  crossAxisGap: 4,
-  mainAxisGap: 4,
-  gridList: generateGridList(100, 4),
-};
-
-
-
 Page({
-
   /**
    * 页面的初始数据
    */
-  data: initData,
+  data: {
+    rankings: [] as Ranking[]
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -35,7 +28,27 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    this.setData({
+      rankings: [
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        { id: 1, rank: 1, avatar: '/image/icon_header_1.png', username: '用户名1', description: '描述信息1', scoreIcon: '/image/icon_integral.png', score: 100 },
+        { id: 2, rank: 2, avatar: '/image/icon_header_2.png', username: '用户名2', description: '描述信息2', scoreIcon: '/image/icon_integral.png', score: 90 },
+        // 其他排行榜数据...
+      ]
+    })
   },
 
   /**
@@ -78,5 +91,5 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
 })

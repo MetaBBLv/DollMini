@@ -1,80 +1,52 @@
 /* pages/shop/shop.wxss */
 page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  background-color: rgb(164, 102, 223);
+  background-color: #eeeeee;
 }
 
-.shopScrollview {
-  flex: 1;
-  overflow-y: hidden;
-  background-color: rgb(164, 102, 223);
+.search-backgroundView {
+  background-color: #fd304d;
+  height: 55px;
+  width: 100%;
+  padding: 8px;
 }
 
 .search-box {
+  background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  background-color: darkgrey;
+  border: 1px solid #ccc;
+  height: 40px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('/image/icon_search.png');
+  background-size: cover;
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+  margin: 0 5px; /* 控制间隔线与图标之间的距离 */
 }
 
 .search-input {
   flex: 1;
-  height: 40px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  padding: 0 15px;
+  border: none;
+  outline: none;
+  font-size: 12px;
 }
 
 .search-btn {
-  height: 40px;
-  padding: 0 15px;
-  margin-left: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-}
-
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 16px;
-}
-
-.card {
-  width: 48%; /* 控制卡片的宽度 */
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-  border-radius: 8px;
-  margin-bottom: 16px;
-}
-
-.card-image {
-  width: 100%;
-  height: 150px; /* 控制图片的高度 */
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  object-fit: cover; /* 图片等比例缩放填充 */
-}
-
-.card-content {
-  padding: 12px;
-}
-
-.card-title {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333333;
-  margin-bottom: 8px;
-}
-
-.card-description {
   font-size: 14px;
-  color: #666666;
+  padding: 5px 10px;
+  background-color: #fe5800;
+  color: #fff;
+  height: 32px;
+  width: 60px;
+  border-radius: 16px;
 }
-

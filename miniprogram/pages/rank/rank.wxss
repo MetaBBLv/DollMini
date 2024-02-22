@@ -1,1 +1,71 @@
 /* pages/rank/rank.wxss */
+page {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.rankScrollview {
+  flex: 1;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #eeeeee;
+}
+
+.rank-list {
+  width: 100%;
+  color: black;
+  padding: 8px;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+  margin-bottom: 10px;
+  color: black;
+}
+
+.rank {
+  width: 30px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.shopAddress {
+  font-size: 12px;
+  color:gray;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+.score-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.score-text {
+  width: 50px;
+  height: 20px;
+  text-align: center;
+}

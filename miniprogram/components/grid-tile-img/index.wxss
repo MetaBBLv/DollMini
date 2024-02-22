@@ -4,15 +4,21 @@
   padding: 12px;
 }
 
-.card-title {
-  font-size: 16px;
-  font-weight: bold;
+.card-commodity {
+  font-size: 14px;
+  /* font-weight: bold; */
   color: #333333;
   margin-bottom: 8px;
 }
 
-.card-description {
-  font-size: 14px;
+.card-exchangeNum {
+  font-size: 12px;
+  color: red;
+}
+
+.card-inventory {
+  margin-left: 10px;
+  font-size: 12px;
   color: #666666;
 }
 

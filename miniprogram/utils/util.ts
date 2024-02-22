@@ -46,15 +46,29 @@ function getRandomInt(max: number): number {
   return Math.floor(Math.random() * max)
 }
 
-export const generateGridList = (childCount: number, columns: number): { id: number; sub: number }[] => {
-  const ans: { id: number; sub: number }[] = []
+export const generateGridList = (childCount: number, columns: number): { id: number; sub: number;commodity:string; exchangeNum: number; inventory: number }[] => {
+  const ans: { id: number; sub: number; commodity:string; exchangeNum: number; inventory: number }[] = []
   for (let i = 0; i < childCount; i++) {
     ans.push({
       id: i,
       sub: getRandomInt(columns) + 1,
+      commodity: generateRandomChinese(Math.floor(Math.random() * 20) + 1),
+      exchangeNum: Math.floor(Math.random() * 100) + 1,
+      inventory: Math.floor(Math.random() * 100) + 1
     })
   }
   console.log(ans);
   
   return ans
+}
+
+function generateRandomChinese(length: number): string {
+  let result = '';
+
+  for (let i = 0; i < length; i++) {
+    const unicode = Math.round(Math.random() * 20901) + 19968; // 19968 是汉字的起始 Unicode 编码，20901 是汉字的数量
+    result += String.fromCharCode(unicode);
+  }
+
+  return result;
 }

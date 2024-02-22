@@ -3,20 +3,20 @@ page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #ffffff;
-  background-color: rgb(164, 102, 223);
+  color: black;
+  background-color: #eeeeee;
 }
 
 .homeScrollview {
   flex: 1;
   overflow-y: hidden;
-  background-color: rgb(164, 102, 223);
+  background-color: #eeeeee;
 }
  
 .bannerView {
   width: 100vw;
   height: 350px;
-  background-color: rgb(164, 102, 223);
+  background-color: white;
 }
 
 .bannerImage {
@@ -58,6 +58,7 @@ page {
   box-sizing: border-box;
   background-color: white;
   border-radius: 10px; /* 设置圆角为10像素 */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .userInfoHeaderImage {
@@ -135,6 +136,7 @@ page {
   box-sizing: border-box;
   background-color: white;
   border-radius: 10px; /* 设置圆角为10像素 */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .buisnessButtonView {

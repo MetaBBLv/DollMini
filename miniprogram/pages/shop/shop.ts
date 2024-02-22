@@ -1,18 +1,28 @@
 // pages/shop/shop.ts
-interface CardItem {
-  image: string;
-  title: string;
-  description: string;
+import { generateGridList } from '../../utils/util';
+
+interface PageData {
+  crossAxisCount: number;
+  crossAxisGap: number;
+  mainAxisGap: number;
+  gridList: { id: number; sub: number; commodity:string; exchangeNum: number; inventory: number }[];
 }
+
+const initData: PageData = {
+  crossAxisCount: 2,
+  crossAxisGap: 8,
+  mainAxisGap: 8,
+  gridList: generateGridList(100, 4),
+};
+
+
 
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-    cardList: [] as CardItem[]
-  },
+  data: initData,
 
   /**
    * 生命周期函数--监听页面加载
@@ -25,21 +35,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    // 初始化 cardList 数组
-    this.setData({
-      cardList: [
-        { image: '/image/icon_ORCode.png', title: 'Apple AirPods Pro 无损降噪耳机', description: '兑换积分：50\n剩余数量：10' },
-        { image: '/image/icon_header_2.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        { image: '/image/icon_header_1.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        { image: '/image/icon_banner_forest_1.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        { image: '/image/icon_banner_forest_2.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        { image: '/image/icon_banner_forest_3.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        { image: '/image/icon_banner_forest_4.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        { image: '/image/icon_banner_forest_5.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        { image: '/image/icon_banner_forest_6.png', title: '卡片标题2', description: '这是卡片2的描述内容' },
-        // 更多卡片数据...
-      ]
-    });
+
   },
 
   /**
@@ -82,5 +78,18 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  onGridViewTap(event: any) {
+    // 处理点击事件的逻辑
+    const { index } = event.currentTarget.dataset;
+    console.log('点击了第', index, '个 grid-item');
+  },
+
+  onSearch() {
+    // 处理搜索逻辑
+    console.log("点击了搜索");
+    
   }
+
 })

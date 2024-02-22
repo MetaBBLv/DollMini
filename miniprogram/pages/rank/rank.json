@@ -1,7 +1,5 @@
 {
   "usingComponents": {
-    "navigation-bar": "/components/navigation-bar/navigation-bar",
-    "grid-tile-img": "/components/grid-tile-img/index"
-  },
-  "componentFramework": "glass-easel" 
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
 }

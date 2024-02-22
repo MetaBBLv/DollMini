@@ -1,5 +1,8 @@
-<image style="width: 100%; height: {{height}}px" src="https://picsum.photos/{{width}}/{{height}}?random={{index}}" mode="aspectFill"></image>
+<image style=" border-top-left-radius: 8px; border-top-right-radius: 8px; width: 100%; height: {{height}}px" src="https://picsum.photos/{{width}}/{{height}}?random={{index}}" mode="aspectFill"></image>
 <view class="card-content">
-      <text class="card-title">{{index}} + "这是标题" </text>
-      <text class="card-description">{{index}}  + "这是描述" </text>
+      <text class="card-commodity">{{commodity}}</text>
+      <view style="display: flex;">
+        <text class="card-exchangeNum">{{exchangeNum}}积分</text>
+        <text class="card-inventory">剩余库存{{inventory}}件</text>
+      </view>
 </view>
