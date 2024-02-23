@@ -1,5 +1,5 @@
 <!--pages/shop/shop.wxml-->
-<navigation-bar title="兑换商城" back="{{false}}" color="white" background="#fd304d"></navigation-bar>
+<navigation-bar title="兑换商城" back="{{false}}" color="white" background="#ffbe0b"></navigation-bar>
 <view class="search-backgroundView">
   <view class="search-box">
     <view class="search-icon"></view>

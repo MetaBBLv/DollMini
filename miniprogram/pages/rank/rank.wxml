@@ -1,5 +1,24 @@
-<navigation-bar title="排行榜" back="{{false}}" color="white" background="#fd304d"></navigation-bar>
+<navigation-bar title="排行榜" back="{{false}}" color="white" background="#ffbe0b"></navigation-bar>
 <scroll-view class="rankScrollview" scroll-y type="custom">
+  <view class="rankTopBackgroundView">
+    <view class="rankTopView">
+      <view class="rankTopButtonView">
+        <button class="rankTopButton">
+          <image src="/image/icon_ORCode.png" class="rankTopButtonIcon" />
+          <text class="rankTopButtonText">我的二维码</text>
+        </button>
+        <button class="rankTopButton">
+          <image src="/image/icon_scanCode.png" class="rankTopButtonIcon" />
+          <text class="rankTopButtonText">扫描二维码</text>
+        </button>
+        <button class="rankTopButton">
+          <image src="/image/icon_gamePointChange.png" class="rankTopButtonIcon" />
+          <text class="rankTopButtonText">游戏币兑换</text>
+        </button>
+      </view>
+      <image class="rankTopImage" src="/image/icon_user_orcode.pic.jpg" mode="aspectFit"/>
+    </view>
+  </view>
 <view class="rank-list">
   <view wx:for="{{rankings}}" wx:key="id" class="rank-item">
     <!-- 排名 -->

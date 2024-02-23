@@ -4,7 +4,7 @@ page {
 }
 
 .search-backgroundView {
-  background-color: #fd304d;
+  background-color: #ffbe0b;
   height: 55px;
   width: 100%;
   padding: 8px;
@@ -43,8 +43,8 @@ page {
 
 .search-btn {
   font-size: 14px;
-  padding: 5px 10px;
-  background-color: #fe5800;
+  padding: 6px 13px;
+  background-color: #ffbe0b;
   color: #fff;
   height: 32px;
   width: 60px;

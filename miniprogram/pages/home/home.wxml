@@ -1,5 +1,5 @@
 <!--pages/home.wxml-->
-<navigation-bar title="首页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="首页" back="{{false}}" color="white" background="#ffbe0b"></navigation-bar>
 <scroll-view class="homeScrollview" scroll-y type="list">
   <view class="bannerView">
     <swiper class="bannerImage" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}"   duration="{{500}}" circular="{{true}}">
